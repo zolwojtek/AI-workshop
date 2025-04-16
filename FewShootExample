@@ -1,0 +1,37 @@
+Example of Few-shot Prompting - it's very simple. Rememebr that there is no magic, it gives the model a gfreat knowledge waht is the proper output structure, but if it is able to recognise a movie by a short description is totally differnt thing.
+Play with it, try short description and more detailed ones. Notice how amount of input data influences the percentage of correct answers. You can also try to modify the prompt itself.
+Prompt:
+
+Extract structured information about a movie in the following JSON format:
+{
+  "title": string,
+  "year": number,
+  "genre": [string],
+  "director": string,
+  "cast": [string],
+  "summary": string
+}
+
+Examples:
+
+Description: A young boy discovers he is a wizard and attends a magical school where he makes friends and uncovers secrets about his past.
+Output:
+{
+  "title": "Harry Potter and the Sorcerer's Stone",
+  "year": 2001,
+  "genre": ["Fantasy", "Adventure"],
+  "director": "Chris Columbus",
+  "cast": ["Daniel Radcliffe", "Emma Watson", "Rupert Grint"],
+  "summary": "A young wizard begins his magical education and learns about his mysterious heritage."
+}
+
+Description: A group of intergalactic criminals band together to save the universe from a powerful villain.
+Output:
+{
+  "title": "Guardians of the Galaxy",
+  "year": 2014,
+  "genre": ["Action", "Science Fiction", "Adventure"],
+  "director": "James Gunn",
+  "cast": ["Chris Pratt", "Zoe Saldana", "Dave Bautista"],
+  "summary": "A team of misfit heroes come together to stop a cosmic threat to the galaxy."
+}
