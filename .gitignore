@@ -1,0 +1,34 @@
+# Environment variables
+src/.env
+src/.env.local
+src/.env.*.local
+
+# Dependencies
+src/node_modules/
+src/npm-debug.log*
+src/yarn-debug.log*
+src/yarn-error.log*
+
+# Build output
+src/dist/
+src/build/
+src/*.tsbuildinfo
+
+# IDE and editor files
+src/.idea/
+src/.vscode/
+src/*.swp
+src/*.swo
+src/.DS_Store
+
+# Logs
+src/logs/
+src/*.log
+
+# Testing
+src/coverage/
+src/.nyc_output/
+
+# Temporary files
+src/tmp/
+src/temp/ 
