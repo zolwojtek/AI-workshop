@@ -93,4 +93,3 @@ npm run serve
 ⚠️ **Important**: 
 - Never commit your `.env` file to version control
 - Ensure `.env` is listed in your `.gitignore` file
-- Keep your API keys secure and rotate them regularly
