@@ -63,8 +63,8 @@ project/
 To run the transcription processor:
 
 ```bash
-npm start:completion
-npm start:transcription
+npm run start:completion
+npm run start:transcription
 ```
 
 Or using ts-node directly:
